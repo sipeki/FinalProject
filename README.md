@@ -1,5 +1,9 @@
 # Final Project - Vet Practice
 
+## Recources
+###### GIT: https://github.com/willpearce101/FinalProject
+###### TRELLO: https://trello.com/b/coTFUF53/final-project
+
 
 | Contents |
 | ------ |
@@ -54,6 +58,9 @@ The application consists of two different repositories making up the front and b
 * **Kubernetes** acted as the manager node in our EKS cluster allowing us to quickly deploy a configured scalable working environment in which to run the application.
 
 # Trello Board
+
+Day one Trello board allocations. 
+![](https://imgur.com/dNtqPeA)
 
 # MoSCow Analysis
 
