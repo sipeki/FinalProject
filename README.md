@@ -75,7 +75,7 @@ Application for managing a veterinary practice.
 The application is a monolithic application separated into a  Java backend and JSON front end.  
 The architecture has three tiers.
 
-[Imgur](https://i.imgur.com/WYwkzpL.jpg)
+![architecture has three tiers](https://i.imgur.com/WYwkzpL.jpg)
 
 
 
