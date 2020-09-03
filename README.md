@@ -77,8 +77,47 @@ The architecture has three tiers.
 
 ![architecture has three tiers](https://i.imgur.com/WYwkzpL.jpg)
 
+* Web/app server
+ * Spring Framework. Programming and configuration model for Java applications. Developers are freed to develop business logic rather than developing code to manage the data.
+ * Non specific to the deployment environment.
+ * REST (REpresentational State Transfer)  API.  This means that all requests are stateless and there is no stored context on the server.
+ 
+* Database server
+ * MYSQL 
+ * Database is not in a container as containers are for application and are thus transient by nature. Data has to be persistent.
+ * Amazon RDS hosts the database repository.
+
+* Client
+ * JSON 
+ * Angular application design framework and development platform for single-page apps.
+ * Node.js asynchronous event-driven JavaScript runtime.
+
+## Deployment
+
+* Backend
+ * Maven build automation tool that packages the compiled JAR file.
+ * Maven creates a Target directory and JAR file for the deployment is found here.
+ * DOCKERFILE creates an image from a Java image and copies the JAR file into the docker image.
+	
+* Frontend
+ * Prior to creating the new DOCKERFILE new angular build had to be initiated therefore to get this done full project dependencies had to be installed to compile the build. All dependencies are listed in package.json and installed using NPM. Frontend and Backend is handled by Nginx using reverse proxy which is then deployed using Kubernetes.
+	
+	
+**Containerisation of back and front end**
+* The frontend and backend was packaged up and a docker image was created.
+ * Improved pipeline for the application life cycle
+ * No mutations
+ * Scalability
 
 
+# Risk Assessment
+
+![Risk Assessment](https://imgur.com/vuXuczE)
+
+# Estimate Cost
+These are the estimated cost of running 3 on demand t3a.medium instances. Please note running EKS cluster is chargeable $0.10 per hour which is not included in the picture below, therefore cost likely to match deployment using docker swarm instead. Monthly cost to run the Kubernetes cluster would add an additional **$74.40** per month, **$892.80** per year to run.
+
+![Estimate Cost](https://imgur.com/vuXuczE)
 
 
 
