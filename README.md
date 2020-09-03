@@ -112,12 +112,16 @@ The architecture has three tiers.
 
 # Risk Assessment
 
-![Risk Assessment](https://imgur.com/vuXuczE)
+![Risk Assessment](https://i.imgur.com/vuXuczE.jpg)
 
 # Estimate Cost
 These are the estimated cost of running 3 on demand t3a.medium instances. Please note running EKS cluster is chargeable $0.10 per hour which is not included in the picture below, therefore cost likely to match deployment using docker swarm instead. Monthly cost to run the Kubernetes cluster would add an additional **$74.40** per month, **$892.80** per year to run.
 
-![Estimate Cost](https://imgur.com/vuXuczE)
+![Estimate Cost](https://i.imgur.com/Oax5W0b.jpg)
+
+# Infrastructure AWS Overview 
+
+![network](https://i.imgur.com/ME500cp.jpg)
 
 
 
