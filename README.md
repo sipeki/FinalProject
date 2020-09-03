@@ -161,7 +161,7 @@ Terraform is being used as our Infrastructure as Code(IaC) tool, through which w
 ## Jenkins
 Jenkins is our CI/CD Server, through which the application will be deployed from. Jenkins will have a webhook set-up from our GitHub Repo that will notify Jenkins when there is an update to the “Kubernetes” branch - as that branch will be where the deployment files will be hosted.
 
-![](https://i.imgur.com/7Hb3FiD.png)
+![](https://i.imgur.com/gSdjv5H.png)
 
 ## AWS EKS
 The AWS EKS Cluster is the Orchestration tool used for deploying and Load Balancing the application across Manager and Worker Nodes. The Front and Back end application will be talking to each other through the Proxy set-up within the NGINX Pod, while having their own respective Pods to deploy to.
