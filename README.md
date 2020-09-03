@@ -89,20 +89,20 @@ The architecture has three tiers.
 
 ![architecture has three tiers](https://i.imgur.com/WYwkzpL.jpg)
 
-* Web/app server
- * Spring Framework. Programming and configuration model for Java applications. Developers are freed to develop business logic rather than developing code to manage the data.
- * Non specific to the deployment environment.
- * REST (REpresentational State Transfer)  API.  This means that all requests are stateless and there is no stored context on the server.
+* **Web/app server**
+ 	* Spring Framework. Programming and configuration model for Java applications. Developers are freed to develop business logic rather than developing code to manage the data.
+ 	* Non specific to the deployment environment.
+ 	* REST (REpresentational State Transfer)  API.  This means that all requests are stateless and there is no stored context on the server.
  
-* Database server
- * MYSQL 
- * Database is not in a container as containers are for application and are thus transient by nature. Data has to be persistent.
- * Amazon RDS hosts the database repository.
+* **Database server**
+ 	* MYSQL 
+ 	* Database is not in a container as containers are for application and are thus transient by nature. Data has to be persistent.
+ 	* Amazon RDS hosts the database repository.
 
-* Client
- * JSON 
- * Angular application design framework and development platform for single-page apps.
- * Node.js asynchronous event-driven JavaScript runtime.
+* **Client**
+ 	* JSON 
+ 	* Angular application design framework and development platform for single-page apps.
+ 	* Node.js asynchronous event-driven JavaScript runtime.
 
 ## Deployment
 
