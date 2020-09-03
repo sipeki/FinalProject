@@ -170,7 +170,7 @@ Fargate's main benefit is saving on time and money on infrastructure management.
 The database requires system variables to be set so that authentication can be accomplished without hard coding the details into the code and having the code exposed on Github to the public.  Any file holding these details needs to be included in .gitignore to prevent the file being pushed to the Github repository 
 This is an  unreliable method and is not a secure method for holding such details. Human error could mean that the file is not included in gitignore. The file is not encrypted and stored on a VM on the public cloud which is poetional risk of the VM not being secure. No access control and audit. The file needs to be created every time the repository is cloned. In other words this method is crude.
 
-A better method  would be a system that separates from the code for holding system variables. This is what AWS Systems Manager Parameter Store provides. The main benefits for this project:
+A better method  would be a system that separates from the code for holding system variables. This is what **AWS Systems Manager Parameter Store** provides. The main benefits for this project:
 * Secure and scalable
 * Access control and audit, to a granular level
 * Security posture ameliorated with code and data separated compared to having access data stored in the actual code.
@@ -181,7 +181,7 @@ The next deployment of the application environment will include AWS Systems Mana
 The next setup after deploying the application was to implement monitoring and auditing. That is to monitor the cloud services and the applications being run. Actions taken by users, cloud service and roles would be monitored and recorded.
 AWS provides CloudTrail, CloudWatch, AWS Config  for this purpose. 
 Another option is to use a cross platform solution such as New Relic for application monitoring and performance . New Relic is SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps. New Relic is the all-in-one web application performance tool that lets you see performance from the end user experience, through servers, and down to the line of application code.
-The main difference between Cloud Trail and New Relic is that Cloud Trail is Log Management and New Relic can be seen as more of a  Performance Monitoring Tool. DevOps practitioners report that New Relic is easy to set up with a margin of 68 to 1 compared to AWS. There is a larger community to call on when it comes to New Relic. Four main points in New Relic is:
+The main difference between Cloud Trail and New Relic is that Cloud Trail is **Log Management** and New Relic can be seen as more of a  **Performance Monitoring Tool**. DevOps practitioners report that New Relic is easy to set up with a margin of 68 to 1 compared to AWS. There is a larger community to call on when it comes to New Relic. Four main points in New Relic is:
 
 * Not a AWS service
 * Performance Data Retention
