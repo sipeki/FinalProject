@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sleep 120
-kubect get svc
+sleep 60
+kubectl get svc
