@@ -128,14 +128,14 @@ The architecture has three tiers.
 
 # Risk Assessment
 
-![Risk Assessment](https://i.imgur.com/vuXuczE.jpg)
+![Risk Assessment](https://i.imgur.com/9REVzNh.png)
 
 # Estimate Cost
 These are the estimated cost of running 3 on demand t3a.medium instances. Please note running EKS cluster is chargeable $0.10 per hour which is not included in the picture below, therefore cost likely to match deployment using docker swarm instead. Monthly cost to run the Kubernetes cluster would add an additional **$74.40** per month, **$892.80** per year to run.
 
-To keep up costs as low as possible few recommendation could be made. For one reserved instances could be used if application to be used for longer period, discount depends on upfront cost and can be found in more details here [AWS Reserved instance pricing](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/ "AWS Reserved instance pricing"). Cloud watch and other monitoring tools could be utilised to make sure application used all resources given to avoid overpaying for unused power. Also to make it even more complicated but cheaper in the long run autoscaling could be adapted which is AWS speak very highly of. Depening on the load transmitted to application it either shrinks or expands its power ending directly affecting costs.
-
 ![Estimate Cost](https://i.imgur.com/Oax5W0b.jpg)
+
+To keep up costs as low as possible few recommendation could be made. For one reserved instances could be used if application to be used for longer period, discount depends on upfront cost and can be found in more details here [AWS Reserved instance pricing](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/ "AWS Reserved instance pricing"). Cloud watch and other monitoring tools could be utilised to make sure application used all resources given to avoid overpaying for unused power. Also to make it even more complicated but cheaper in the long run autoscaling could be adapted which is AWS speak very highly of. Depening on the load transmitted to application it either shrinks or expands its power ending directly affecting costs.
 
 # Infrastructure AWS Overview 
 
