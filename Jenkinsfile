@@ -4,11 +4,12 @@ pipeline {
 
     stages {
 
-        stage('Deploy Front/Backend')
+        stage('Deploy Front/Backend'){
 
                 steps{
                     sh 'chmod +x kube.sh'
                     sh './kube.sh'
                 }
+        }
     }
 }
