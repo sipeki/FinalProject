@@ -123,5 +123,95 @@ These are the estimated cost of running 3 on demand t3a.medium instances. Please
 
 ![network](https://i.imgur.com/ME500cp.jpg)
 
+![infrastructure design](https://i.imgur.com/C694sh5.jpg)
+
+![automation flow](https://i.imgur.com/fc3NFL1.jpg)
+
+# Orchestration
+## Terraform
+
+Terraform is being used as our Infrastructure as Code(IaC) tool, through which we will be deploying:
+
+* EC2 & RDS Instance
+* VPC, Subnets & Internet Gateway
+* Security Group
+* EKS Cluster & Node Groups
+* IAM Roles
+
+## Jenkins
+Jenkins is our CI/CD Server, through which the application will be deployed from. Jenkins will have a webhook set-up from our GitHub Repo that will notify Jenkins when there is an update to the “Kubernetes” branch - as that branch will be where the deployment files will be hosted.
+
+## AWS EKS
+The AWS EKS Cluster is the Orchestration tool used for deploying and Load Balancing the application across Manager and Worker Nodes. The Front and Back end application will be talking to each other through the Proxy set-up within the NGINX Pod, while having their own respective Pods to deploy to.
+
+# Security
+Each team member was issued with AWS credentials with full administrator access. As each team member had multiple deliverables it was felt final granular control would create dependencies within the group to deliver.
+EKS user was set up for deployment of the infrastructure instances with full administrative access. 
+NG
+
+# Retrospective 
+
+## Future Improvements
+
+
+https://aws.amazon.com/fargate/   Include this tech as it’s serverless and does not require constant monitoring.  
+Discuss the SVC manual output // Constant DNS using route 53
+“Right now there is a health check taking place Hence the wait”
+
+### Reducing overheads and improve ROI
+To reduce costs and reduce the workload we identified a means of eliminating the management of instances for EKS cluster. 
+Provision and managing the servers is a manual process that is based on our understanding what is required. EC2 instance has to be paid for evening if it is not being used. The server has to also be maintained and configured, which is a cost. Under provisioned deployment will deliver poor performance and reputational damage. Over provision will increase the cost with poor ROI. Servers are not fully utilised and require maintenance.
+To eliminate these concerns and issues the next step was to implement AWS Fargate. A serverless compute engine for containers. Instead of deploying EC2 instances, containers are deployed. Removing the need for infrastructure management. Instead of paying for EC2 resource payment is for requested compute resources when used. 
+Further benefit of AWS is security; the pods run in their own dedicated kernel runtime with no sharing of CPU, memory, storage or network resources. Each task is thus isolated.
+Resources that would be taken up on infrastructure design and management are freed for application development.
+Fargate's main benefit is saving on time and money on infrastructure management. If compute costs dwarf infrastructure management costs then Fargate would not be the best option.
+
+### Improved security 
+The database requires system variables to be set so that authentication can be accomplished without hard coding the details into the code and having the code exposed on Github to the public.  Any file holding these details needs to be included in .gitignore to prevent the file being pushed to the Github repository 
+This is an  unreliable method and is not a secure method for holding such details. Human error could mean that the file is not included in gitignore. The file is not encrypted and stored on a VM on the public cloud which is poetional risk of the VM not being secure. No access control and audit. The file needs to be created every time the repository is cloned. In other words this method is crude.
+
+A better method  would be a system that separates from the code for holding system variables. This is what AWS Systems Manager Parameter Store provides. The main benefits for this project:
+* Secure and scalable
+* Access control and audit, to a granular level
+* Security posture ameliorated with code and data separated compared to having access data stored in the actual code.
+
+The next deployment of the application environment will include AWS Systems Manager Parameter Store.
+
+### Monitoring
+The next setup after deploying the application was to implement monitoring and auditing. That is to monitor the cloud services and the applications being run. Actions taken by users, cloud service and roles would be monitored and recorded.
+AWS provides CloudTrail, CloudWatch, AWS Config  for this purpose. 
+Another option is to use a cross platform solution such as New Relic for application monitoring and performance . New Relic is SaaS Application Performance Management for Ruby, PHP, .Net, Java, Python, and Node.js Apps. New Relic is the all-in-one web application performance tool that lets you see performance from the end user experience, through servers, and down to the line of application code.
+The main difference between Cloud Trail and New Relic is that Cloud Trail is Log Management and New Relic can be seen as more of a  Performance Monitoring Tool. DevOps practitioners report that New Relic is easy to set up with a margin of 68 to 1 compared to AWS. There is a larger community to call on when it comes to New Relic. Four main points in New Relic is:
+
+* Not a AWS service
+* Performance Data Retention
+* Real-User Response Time, Throughput, & Breakdown by Layer
+* App Response Time, Throughput, & Breakdown by Component
+
+Given time the plan was to sign up for New Relic One Perpetually free access plan to test the viability of the product and compare against AWS offering.
+
+> Perpetually free access: 100 GB/month of free data ingest. 1 free full access user. Unlimited free basic users.
+
+# Micro Services
+
+The architecture is containerized but still monolithic because each container has all the same features of the rest of the containers. The next step is to convert the monolith into microservices. 
+
+The benefits of converting the applications to microservices:
+* Flexible scaling: Infrastructure and number of instances 
+* Security sandboxed: A compromised service means no horizontal access to other resources.
+* Crashes isolated: Only the microservice goes down the rest of application continue
+* Agile Development: New features on the service do not affect the other services.
+
+The method to convert to microservices is to identify the API for the application and system services. 
+Issues  
+
+# Creators 
+> Paul Lagah:  https://github.com/paullagah
+> Scott Halliday: https://github.com/sdhalliday92
+> Simon Kindlen: https://github.com/sipeki
+> Tadas Byautas: https://github.com/tadasbytautas
+> William Pearce: https://github.com/coolwill92
+
+
 
 
