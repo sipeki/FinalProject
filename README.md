@@ -207,10 +207,15 @@ Issues
 
 # Creators 
 > Paul Lagah:  https://github.com/paullagah
+
 > Scott Halliday: https://github.com/sdhalliday92
+
 > Simon Kindlen: https://github.com/sipeki
+
 > Tadas Byautas: https://github.com/tadasbytautas
+
 > William Pearce: https://github.com/coolwill92
+
 
 
 
