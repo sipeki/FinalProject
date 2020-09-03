@@ -68,6 +68,17 @@ As the application was developed for the project we took user stories to be that
 * Will Not
   * As a user I wish the monolithic application to be deployed as microservice enable the app to better scalability  
 
+# Architecture 
+
+## Application Overview
+Application for managing a veterinary practice.
+The application is a monolithic application separated into a  Java backend and JSON front end.  
+The architecture has three tiers.
+
+[architecture has three tiers](https://i.imgur.com/WYwkzpL.jpg)
+
+
+
 
 
 
