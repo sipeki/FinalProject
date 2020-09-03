@@ -60,7 +60,7 @@ The application consists of two different repositories making up the front and b
 # Trello Board
 
 Day one Trello board allocations. 
-![](https://imgur.com/dNtqPeA)
+![trello](https://i.imgur.com/dNtqPeA.png)
 
 # MoSCow Analysis
 
