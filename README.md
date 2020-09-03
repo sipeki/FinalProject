@@ -53,7 +53,21 @@ The application consists of two different repositories making up the front and b
 * **Docker** was utilized for containerisation purposes allowing the application to be deployed efficiently as we could integrate it’s functionally with Kubernetes.
 * **Kubernetes** acted as the manager node in our EKS cluster allowing us to quickly deploy a configured scalable working environment in which to run the application.
 
-#Trello Board
+# Trello Board
 
-#MoSCow Analysis
+# MoSCow Analysis
+
+As the application was developed for the project we took user stories to be that of priorities on how the app was to be deployed rather than features of the app that benefit the customer.
+
+* Must 
+  * As a user I wish to be able to view and modify veterinary practice records
+* Should
+  * As a user I want the application to be running container so the application system environment independent
+* Could
+  * As a user I wish to have all systems variables to be encrypted and access audit for improved security
+* Will Not
+  * As a user I wish the monolithic application to be deployed as microservice enable the app to better scalability  
+
+
+
 
