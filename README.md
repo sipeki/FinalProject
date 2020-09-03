@@ -67,6 +67,10 @@ Day one Trello board allocations. At this point team was in discussions what exa
 
 ![trello](https://i.imgur.com/dNtqPeA.png)
 
+Second image of Trello is almost at projects final moments. Overtime few ideas changed and different technologies were adapted. Application deployment cycle slightly shifted as well. Initial idea was to use docker swarm for orchestration however team knowledge allowed us to deploy more advanced tool such as kubernetes therefore idea to use docker swarm was scrapped pretty quickly. We met many issues and obstacles on deployment life cycle which are mostly documented on trello. With help of Google and our trainers Syed's enormous patience we manage overcome all of them. 
+
+![trello](https://i.imgur.com/3mETnC1.png)
+
 # MoSCow Analysis
 
 As the application was developed for the project we took user stories to be that of priorities on how the app was to be deployed rather than features of the app that benefit the customer.
