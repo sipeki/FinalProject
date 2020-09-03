@@ -59,7 +59,8 @@ The application consists of two different repositories making up the front and b
 
 # Trello Board
 
-Day one Trello board allocations. 
+Day one Trello board allocations. At this point team was in discussions what exactly had to be done make the project working and what technologies should be used to make sure each project requirement is covered.
+
 ![trello](https://i.imgur.com/dNtqPeA.png)
 
 # MoSCow Analysis
