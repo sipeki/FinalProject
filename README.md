@@ -31,9 +31,13 @@
 
 # The Team
 > Paul Lagah, DevOps and Cloud Consultant, QA
+
 > Scott Halliday, DevOps and Cloud Consultant, QA
+
 > Simon Kindlen, DevOps and Cloud Consultant, QA
+
 > Tadas Byautas, DevOps and Cloud Consultant, QA
+
 > William Pearce, DevOps and Cloud Consultant, QA 
 
 # Project Brief
