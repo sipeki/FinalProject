@@ -188,7 +188,13 @@ Provision and managing the servers is a manual process that is based on our unde
 To eliminate these concerns and issues the next step was to implement AWS Fargate. A serverless compute engine for containers. Instead of deploying EC2 instances, containers are deployed. Removing the need for infrastructure management. Instead of paying for EC2 resource payment is for requested compute resources when used. 
 Further benefit of AWS is security; the pods run in their own dedicated kernel runtime with no sharing of CPU, memory, storage or network resources. Each task is thus isolated.
 Resources that would be taken up on infrastructure design and management are freed for application development.
-Fargate's main benefit is saving on time and money on infrastructure management. If compute costs dwarf infrastructure management costs then Fargate would not be the best option.
+Fargate's main benefit is saving on time and money on infrastructure management. 
+
+**Pro's and Con's**
+
+* If compute costs dwarf infrastructure management costs then Fargate would not be the best option.
+* Infrastructure management eliminated
+* Pricing on usage rather instaces deployed
 
 ### Improved security 
 The database requires system variables to be set so that authentication can be accomplished without hard coding the details into the code and having the code exposed on Github to the public.  Any file holding these details needs to be included in .gitignore to prevent the file being pushed to the Github repository 
