@@ -177,7 +177,7 @@ EKS user was set up for deployment of the infrastructure instances with full adm
 
 ## Future Improvements
 
-* Presistent constant DNS record for the website by implementng route 53.
+* Constant DNS record for the website by implementng route 53.
 * Repackage the front end container rebuild the container with a NGINX image by rebuilding with NG Server
 * Granular security for user account access with groups for specific tasks for team members
 
@@ -222,7 +222,7 @@ Given time the plan was to sign up for New Relic One Perpetually free access pla
 
 > New Relic Perpetually free access: 100 GB/month of free data ingest. 1 free full access user. Unlimited free basic users.
 
-# Micro Services
+### Micro Services
 
 The architecture is containerized but still monolithic because each container has all the same features of the rest of the containers. The next step is to convert the monolith into microservices. 
 
@@ -233,6 +233,7 @@ The benefits of converting the applications to microservices:
 * Agile Development: New features on the service do not affect the other services.
 
 The method to convert to microservices is to identify the API for the application and system services.
+
 Having the architecture as microservices makes the application an ideal candidate for deploying with AMS Lambda service.
   
 
