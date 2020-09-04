@@ -177,10 +177,8 @@ NG
 
 ## Future Improvements
 
-
-https://aws.amazon.com/fargate/   Include this tech as it’s serverless and does not require constant monitoring.  
-Discuss the SVC manual output // Constant DNS using route 53
-“Right now there is a health check taking place Hence the wait”
+* Presistent constant DNS record for the website by implementng route 53.
+* Repackage the front end container rebuild the container with a NGINX image by rebuilding with NG Server
 
 ### Reducing overheads and improve ROI
 To reduce costs and reduce the workload we identified a means of eliminating the management of instances for EKS cluster. 
