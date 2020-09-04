@@ -179,6 +179,8 @@ EKS user was set up for deployment of the infrastructure instances with full adm
 
 * Presistent constant DNS record for the website by implementng route 53.
 * Repackage the front end container rebuild the container with a NGINX image by rebuilding with NG Server
+* Granular security for user account access with groups for specific tasks for team members
+
 
 ### Reducing overheads and improve ROI
 To reduce costs and reduce the workload we identified a means of eliminating the management of instances for EKS cluster. 
