@@ -120,11 +120,11 @@ The architecture has three tiers.
 * Frontend
 	* Prior to creating the new DOCKERFILE new angular build had to be initiated therefore to get this done full project dependencies had to be installed to compile the build. All dependencies are listed in package.json and installed using NPM. Frontend and Backend is handled by Nginx using reverse proxy which is then deployed using Kubernetes.
 	
-### Containerisation of back and front end**
+### Containerisation of back and front end
 
 The frontend and backend was packaged up and a docker image was created.
 
-*Benfits
+* Benfits
 	* Improved pipeline for the application life cycle
 	* No mutations
 	* Scalability
