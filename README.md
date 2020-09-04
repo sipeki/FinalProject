@@ -233,10 +233,10 @@ Given time the plan was to sign up for New Relic One Perpetually free access pla
 The architecture is containerized but still monolithic because each container has all the same features of the rest of the containers. The next step is to convert the monolith into microservices. 
 
 The benefits of converting the applications to microservices:
-* Flexible scaling: Infrastructure and number of instances 
-* Security sandboxed: A compromised service means no horizontal access to other resources.
-* Crashes isolated: Only the microservice goes down the rest of application continue
-* Agile Development: New features on the service do not affect the other services.
+* **Flexible scaling:** Infrastructure and number of instances 
+* **Security sandboxed:** A compromised service means no horizontal access to other resources.
+* **Crashes isolated:** Only the microservice goes down the rest of application continue
+* **Agile Development:** New features on the service do not affect the other services.
 
 The method to convert to microservices is to identify the API for the application and system services.
 
