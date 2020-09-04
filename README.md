@@ -116,6 +116,7 @@ The architecture has three tiers.
 	* Maven build automation tool that packages the compiled JAR file.
 	* Maven creates a Target directory and JAR file for the deployment is found here.
 	* DOCKERFILE creates an image from a Java image and copies the JAR file into the docker image.
+	* Database modified to extrenal MYSQL 
 	
 * Frontend
 	* Prior to creating the new DOCKERFILE new angular build had to be initiated therefore to get this done full project dependencies had to be installed to compile the build. All dependencies are listed in package.json and installed using NPM. Frontend and Backend is handled by Nginx using reverse proxy which is then deployed using Kubernetes.
