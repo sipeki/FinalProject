@@ -6,3 +6,4 @@ kubectl get svc
 
 
 # Test Build Ready - Number 1
+# Test Build Ready - Number 2
