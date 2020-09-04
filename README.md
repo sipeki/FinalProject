@@ -240,7 +240,7 @@ The benefits of converting the applications to microservices:
 
 The method to convert to microservices is to identify the API for the application and system services.
 
-Having the architecture as microservices makes the application an ideal candidate for deploying with AMS Lambda service.
+Having the architecture as microservices makes the application an ideal candidate for deploying with AWS Lambda service.
   
 
 # Creators 
