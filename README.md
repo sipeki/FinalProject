@@ -220,7 +220,7 @@ The main difference between Cloud Trail and New Relic is that Cloud Trail is **L
 
 Given time the plan was to sign up for New Relic One Perpetually free access plan to test the viability of the product and compare against AWS offering.
 
-> Perpetually free access: 100 GB/month of free data ingest. 1 free full access user. Unlimited free basic users.
+> New Relic Perpetually free access: 100 GB/month of free data ingest. 1 free full access user. Unlimited free basic users.
 
 # Micro Services
 
@@ -233,7 +233,7 @@ The benefits of converting the applications to microservices:
 * Agile Development: New features on the service do not affect the other services.
 
 The method to convert to microservices is to identify the API for the application and system services. 
-Issues  
+  
 
 # Creators 
 > Paul Lagah:  https://github.com/paullagah
