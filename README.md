@@ -232,7 +232,8 @@ The benefits of converting the applications to microservices:
 * Crashes isolated: Only the microservice goes down the rest of application continue
 * Agile Development: New features on the service do not affect the other services.
 
-The method to convert to microservices is to identify the API for the application and system services. 
+The method to convert to microservices is to identify the API for the application and system services.
+Having the architecture as microservices makes the application an ideal candidate for deploying with AMS Lambda service.
   
 
 # Creators 
