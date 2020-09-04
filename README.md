@@ -5,7 +5,7 @@
 ## Recources
 ###### GIT: https://github.com/willpearce101/FinalProject
 ###### TRELLO: https://trello.com/b/coTFUF53/final-project
-
+###### VIDEO: https://www.youtube.com/watch?v=P1tR0p9OGdg&ab_channel=WillPearce
 
 | Contents |
 | ------ |
