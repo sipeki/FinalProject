@@ -5,4 +5,4 @@ sleep 60
 kubectl get svc
 
 
-# Test Build Ready
+# Test Build Ready - Number 1
