@@ -186,7 +186,7 @@ EKS user was set up for deployment of the infrastructure instances with full adm
 ### Reducing overheads and improve ROI
 To reduce costs and reduce the workload we identified a means of eliminating the management of instances for EKS cluster. 
 Provision and managing the servers is a manual process that is based on our understanding what is required. EC2 instance has to be paid for evening if it is not being used. The server has to also be maintained and configured, which is a cost. Under provisioned deployment will deliver poor performance and reputational damage. Over provision will increase the cost with poor ROI. Servers are not fully utilised and require maintenance.
-To eliminate these concerns and issues the next step was to implement AWS Fargate. A serverless compute engine for containers. Instead of deploying EC2 instances, containers are deployed. Removing the need for infrastructure management. Instead of paying for EC2 resource payment is for requested compute resources when used. 
+To eliminate these concerns and issues the next step was to implement **AWS Fargate**. A serverless compute engine for containers. Instead of deploying EC2 instances, containers are deployed. Removing the need for infrastructure management. Instead of paying for EC2 resource payment is for requested compute resources when used. 
 Further benefit of AWS is security; the pods run in their own dedicated kernel runtime with no sharing of CPU, memory, storage or network resources. Each task is thus isolated.
 Resources that would be taken up on infrastructure design and management are freed for application development.
 Fargate's main benefit is saving on time and money on infrastructure management. 
