@@ -170,8 +170,8 @@ The AWS EKS Cluster is the Orchestration tool used for deploying and Load Balanc
 
 # Security
 Each team member was issued with AWS credentials with full administrator access. As each team member had multiple deliverables it was felt final granular control would create dependencies within the group to deliver.
-EKS user was set up for deployment of the infrastructure instances with full administrative access. 
-NG
+EKS user was set up for deployment of the infrastructure instances with full administrative access - which required us to apply the same user credentials to the prebuilt AMI for the EC2 Kubemaster.
+
 
 # Retrospective 
 
